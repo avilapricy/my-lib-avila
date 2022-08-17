@@ -1,0 +1,22 @@
+import { Meta, Canvas, Story } from '@storybook/addon-docs';
+import Typography from './index.tsx'
+
+<Meta title="Component/Typography"  component={Typography}/>
+
+export const Template = (args) => <Typography {...args} />; 
+
+
+# Typography
+
+<Canvas > 
+    <Story 
+    name="Typography Default"
+    args={{
+        type: 'h1',
+        children: 'Sou uma Typography',
+        color: 'primary/10'
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas> 
+

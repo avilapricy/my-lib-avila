@@ -1,0 +1,20 @@
+import { Meta, Canvas, Story } from '@storybook/addon-docs';
+import MyButton from './MyButton.tsx';
+
+<Meta title='Component/Button' component={MyButton}/>
+
+export const Template = (args) => <MyButton {...args}/>;
+
+# Button
+
+<Canvas>
+    <Story 
+        name='Buttom'
+        args={{
+            primary: true,
+            label: 'Button',
+            children: 'Button'
+        }}>
+    {Template.bind({})}
+    </Story>
+</Canvas>
